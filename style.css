@@ -576,13 +576,10 @@ div#home_content {
     width: 100%;
 }
 /* ____/Update_sills_css_end\______ */
-.projects {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5rem;
-}
+
 .projects .title {
     font-size: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 /* ____/All_projects_css_start\______ */
