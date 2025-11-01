@@ -291,7 +291,7 @@ div#home_content {
 
 
 /* ____/About_css_start\______ */
-.about{
+/* .about{
     position: relative;
     display: flex;
     align-items: center;
@@ -376,7 +376,7 @@ div#home_content {
 .about-btn .btn-box{
     display: flex;
     justify-content: center;
-}
+} */
 /* ____/About_css_end\______ */
 
 
@@ -576,15 +576,21 @@ div#home_content {
     width: 100%;
 }
 /* ____/Update_sills_css_end\______ */
-
+.projects {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+}
+.projects .title {
+    font-size: 2.5rem;
+}
 
 /* ____/All_projects_css_start\______ */
 .all_projects {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 8rem;
+    gap: 8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .projecta.card-link {
@@ -922,6 +928,9 @@ section:nth-child(odd) .animate.scroll,
         flex-wrap: wrap;
         row-gap: 8rem;
     }
+    .all_projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
 }
 
@@ -941,6 +950,10 @@ section:nth-child(odd) .animate.scroll,
     
     .home-content p {
         width: 75%;
+    }
+    .all_projects {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
 }
 
@@ -1031,9 +1044,11 @@ section:nth-child(odd) .animate.scroll,
         width: 50%;
     }
     .all_projects {
-        flex-wrap: wrap;
-        column-gap: 5rem;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
     }
 }
 
